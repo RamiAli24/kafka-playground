@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "kafka-playground"
+version = "0.1.0"
+description = ""
+authors = ["Rami"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+faststream = { extras = ["kafka", "cli"], version = "0.5.43" }
+fastapi = "0.115.14"
+pydantic = "2.11.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
